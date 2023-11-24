@@ -24,7 +24,8 @@ app.get('/meusprodutos', (req, res) => {
 
 app.post('/cadastrar', (req, res) => {
     
-    const { nomeProduto, nomeFornecedor, dataCompra, valorCompra, valorVenda, categoria } = req.body;
+    const { nomeProduto, 
+        nomeFornecedor, dataCompra, valorCompra, valorVenda, categoria } = req.body;
 
     
     const novoProduto = {
@@ -36,7 +37,7 @@ app.post('/cadastrar', (req, res) => {
         categoria,
     };
     
-    res.redirect('/meusprodutos');
+    res.render('viewuser', { user: user })
 });
 
 app.listen(port, () => {
