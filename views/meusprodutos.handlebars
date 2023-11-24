@@ -16,18 +16,13 @@
     <div class="container mt-5">
         <h2>Meus Produtos</h2>
 
-        {{#each produtos}}
-    <div class="card">
-        <div class="card-body">
-            <h5 class="card-title">{{nomeProduto}}</h5>
-            <p class="card-text">Fornecedor: {{nomeFornecedor}}</p>
-            <p class="card-text">Data da Compra: {{dataCompra}}</p>
-            <p class="card-text">Valor de Compra: {{valorCompra}}</p>
-            <p class="card-text">Valor de Venda: {{valorVenda}}</p>
-            <p class="card-text">Categoria: {{categoria}}</p>
-        </div>
-    </div>
-{{/each}}9
+    <h2>Nome do Produto: {{user.nomeProduto}}<br>
+    Nome do Fornecedor: {{user.nomeFornecedor}} <br>
+    Data da Compra: {{user.dataCompra}}<br>
+    Valor de Compra: {{user.valorCompra}}<br>
+    Valor de Venda: {{user.valorVenda}}<br>
+    Categoria do Produto: {{user.categoria}}<br>
+    </h2>
 </body>
 
 </html>
